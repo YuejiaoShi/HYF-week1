@@ -1,0 +1,284 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #243407;
+    color: #BCB88A;
+    opacity: 1;
+}
+
+nav {
+    padding: 1rem;
+    height: 60px;
+    position: fixed;
+}
+
+.nav-item {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: BCB88A;
+    display: inline-block;
+
+}
+
+.nav-link:hover {
+    border: #657166 solid 0.2em;
+    box-shadow: 0 0.7em 0.7em -0.3em #657166;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+h2 {
+    background-image: linear-gradient(to right top, #ffb366, #A8EB12);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: cursive;
+    font-size: 3rem;
+}
+
+@keyframes fadeInSpan {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+header h1 span:nth-of-type(2) {
+    animation: fadeInSpan 2s ease infinite;
+    animation-delay: 0.1s;
+}
+
+header h1 span:nth-of-type(3) {
+    animation: fadeInSpan 2s ease infinite;
+    animation-delay: 0.2s;
+}
+
+header h1 span:nth-of-type(4) {
+    animation: fadeInSpan 2s ease infinite;
+    animation-delay: 0.3s;
+}
+
+header h1 span:nth-of-type(5) {
+    animation: fadeInSpan 2s ease infinite;
+    animation-delay: 0.4s;
+}
+
+header h1 span:nth-of-type(6) {
+    animation: fadeInSpan 2s ease infinite;
+    animation-delay: 0.5s;
+}
+
+header h1 span:nth-of-type(7) {
+    animation: fadeInSpan 2s ease infinite;
+    animation-delay: 0.6s;
+}
+
+header h1 span:nth-of-type(8) {
+    animation: fadeInSpan 2s ease infinite;
+    animation-delay: 0.7s;
+}
+
+header h1 span:nth-of-type(9) {
+    animation: fadeInSpan 2s ease infinite;
+    animation-delay: 0.8s;
+}
+
+header h1 span:nth-of-type(10) {
+    animation: fadeInSpan 2s ease infinite;
+    animation-delay: 0.9s;
+}
+
+header h1 span:nth-of-type(11) {
+    animation: fadeInSpan 2s ease infinite;
+    animation-delay: 1.0s;
+}
+
+
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    padding-top: 60px;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: emoji;
+}
+
+header p {
+    font-size: 2rem;
+    animation: fadeInSpan 1.5s ease forwards;
+    margin-top: 0;
+    font-family: emoji;
+}
+
+
+
+section {
+    padding: 2rem;
+    animation: fadeInSpan 2s ease forwards;
+
+}
+
+.container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+
+.about,
+.skills {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#iframe {
+    /* width: 80%;
+    height: fit-content; */
+    height: 100vh;  /* Set height to 100% of the viewport height */   
+    width: 80%;  /* Set width to 100% of the viewport width */ 
+}
+
+.project {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.portfolio {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 1rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+.skills li {
+    list-style-type: none;
+}
+
+
+.contact h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.social-links a svg {
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+}
+
+.email {
+    color: #dd4b39;
+}
+
+.linkedin {
+    color: #0077b5;
+
+}
+
+.github {
+    color: #6e5494;
+}
+
+.email:hover {
+    box-shadow: 0 0 24px 0 #dd4b39
+}
+
+.linkedin:hover {
+    color: #0077b5;
+    box-shadow: 0 0 24px 0 #0077b5
+}
+
+.github:hover {
+    color: #6e5494;
+    box-shadow: 0 0 24px 0 #6e5494
+}
+
+@media screen and (max-width: 412px) {
+    .container {
+        width: 100%;
+    }
+
+    .row {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    header p {
+        font-size: 1.5rem;
+    }
+
+    .social-links {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
