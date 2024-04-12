@@ -1,19 +1,24 @@
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #243407;
-    color: #BCB88A;
+    background-color: #0e1b0c;
+    color: #f9fe95;
     opacity: 1;
 }
 
+nav ul {
+    margin: 0;
+}
+
 nav {
-    padding: 1rem;
+    padding: 0.9rem;
     height: 60px;
+    width: 100%;
     position: fixed;
     opacity: 2;
     z-index: 2;
+    background-color: rgba(16, 20, 16, 0.75);
 }
 
 .nav-item {
@@ -26,22 +31,23 @@ nav {
     padding: 0.5rem 1rem;
     color: BCB88A;
     display: inline-block;
-
 }
 
 .nav-link:hover {
     border: #657166 solid 0.2em;
+    padding: 5px;
     box-shadow: 0 0.7em 0.7em -0.3em #657166;
-    transform: translateY(-0.25em);
+    transform: translateY(-0.3em);
     cursor: pointer;
 }
 
 h2 {
-    background-image: linear-gradient(to right top, #ffb366, #A8EB12);
+    background-image: linear-gradient(to top, #3bf9f9, #d4fe00);
     background-clip: text;
     color: transparent;
-    font-family: cursive;
+    font-family: 'Futura', "Trebuchet MS", Arial, sans-serif;
     font-size: 3rem;
+    text-shadow: 0 0 10px rgba(250, 250, 5, 0.714);
 }
 
 @keyframes fadeInSpan {
@@ -114,20 +120,27 @@ header {
     width: 100%;
     height: 70vh;
     padding-top: 60px;
+    background-image: url('https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148870458.jpg?w=996&t=st=1712958402~exp=1712959002~hmac=7000c1f8b931c301145c604e05a0598b65d82c4ed167cca2408614ed314f4784');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
 }
 
-h1 {
+h1 span {
     font-size: 5rem;
-    font-family: emoji;
+    background-image: linear-gradient(to top, #3bf9f9, #d4fe00);
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(250, 250, 5, 0.65);
+    font-family: "Gill Sans", sans-serif;
+    margin-right: 0.1rem;
 }
 
 header p {
-    font-size: 2rem;
+    font-size: 1.7rem;
     animation: fadeInSpan 1.5s ease forwards;
     margin-top: 0;
-    font-family: emoji;
 }
-
 
 
 section {
@@ -145,7 +158,6 @@ section {
     flex-wrap: wrap
 }
 
-
 .about,
 .skills {
     padding-top: 0;
@@ -156,18 +168,19 @@ section {
 }
 
 #iframe {
-    /* width: 80%;
-    height: fit-content; */
-    height: 100vh;  /* Set height to 100% of the viewport height */   
-    width: 80%;  /* Set width to 100% of the viewport width */ 
+    height: 75vh;
+    width: 70%;
+    border-radius: 40px;
 }
 
 .project {
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    text-align: center;
 }
 
 .portfolio {
@@ -178,7 +191,6 @@ section {
     align-items: center;
     width: 100%;
 }
-
 
 .social-links {
     margin-top: 1rem;
@@ -224,29 +236,33 @@ section {
 
 .email {
     color: #dd4b39;
+    padding: 7px;
 }
 
 .linkedin {
     color: #0077b5;
-
+    padding: 7px;
 }
 
 .github {
-    color: #6e5494;
+    color: #8766b9;
+    padding: 7px;
 }
 
 .email:hover {
-    box-shadow: 0 0 24px 0 #dd4b39
+    box-shadow: 0 0 24px 0 #dd4b39;
+    border-radius: 10px;
 }
 
 .linkedin:hover {
-    color: #0077b5;
-    box-shadow: 0 0 24px 0 #0077b5
+    border-radius: 10px;
+    box-shadow: 0 0 24px 0 #0077b5;
 }
 
 .github:hover {
-    color: #6e5494;
-    box-shadow: 0 0 24px 0 #6e5494
+    border-radius: 10px;
+    box-shadow: 0 0 24px 0 #8766b9;
+
 }
 
 @media screen and (max-width: 412px) {
@@ -283,4 +299,11 @@ section {
         align-items: center;
     }
 
+}
+
+footer {
+    background-color: #223712;
+    color: #BCB88A;
+    padding: 20px 0;
+    text-align: center;
 }
