@@ -1,0 +1,79 @@
+body {
+  width: 100%;
+  background-image: url(https://nearshorefriends.de/wp-content/themes/theme/assets/img/about-us/hero-bg.png);
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+  background-size: cover;
+}
+
+.survey {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: rgba(27, 27, 50, 0.7);
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+form {
+  width: 60%;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 10 0;
+  border-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+select {
+  margin: 10px 0 0 0;
+  width: 50%;
+  min-height: 2em;
+}
+
+input,
+textarea {
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #8DB600;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
